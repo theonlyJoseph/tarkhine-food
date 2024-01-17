@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        em: "1em",
+        em: "1.5em",
       },
       fontFamily: {
         estedad: ["Estedad"],
@@ -175,7 +175,7 @@ module.exports = {
           "Shade-7": "#08100B",
         },
         Neutral: {
-          White: "#FFFFFF",
+          White: "#FFF",
           Black: "#0C0C0C",
           "Gray-1": "#F9F9F9",
           "Gray-2": "#E1E1E1",

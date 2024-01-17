@@ -6,7 +6,6 @@
   @font-face {
     font-family: "Estedad";
     src: local("Estedad"),
-      url("./Assets/Fonts/Estedad-v7.3/webfonts/statics/Estedad-Regular.woff2")
-        format("woff");
+      url("/Assets/Fonts/Estedad-Regular.woff2") format("woff");
   }
 }
