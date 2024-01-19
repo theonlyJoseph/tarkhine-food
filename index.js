@@ -5,10 +5,12 @@ const cartIcon = document.querySelectorAll(".shopping-cart");
 button.addEventListener("click", (e) => {
   let element = e.target;
 
-  if (element.classList.contains("order")) {
+  if (
+    element.parentElement.classList.contains("btn-primary-green--outline-lg")
+  ) {
     element.previousElementSibling.classList.add("invisible");
     element.nextElementSibling.classList.add("invisible");
-    element.parentElement.classList.add("btn-primary--loading");
+    element.parentElement.classList.add("btn-primary-loading");
     element.innerHTML = `<svg
     id="spinner"
     class="w-em h-em text-white animate-spin"
