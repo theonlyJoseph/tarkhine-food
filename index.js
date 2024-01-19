@@ -8,10 +8,10 @@ button.addEventListener("click", (e) => {
   if (element.classList.contains("order")) {
     element.previousElementSibling.classList.add("invisible");
     element.nextElementSibling.classList.add("invisible");
-    // element.classList.add("p-1");
+    element.parentElement.classList.add("btn-primary--loading");
     element.innerHTML = `<svg
     id="spinner"
-    class="w-3 h-3 text-white animate-spin"
+    class="w-em h-em text-white animate-spin"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
