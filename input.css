@@ -10,8 +10,20 @@
   }
 }
 
-.btn-primary-text {
-  @apply text-Neutral-White bg-Main-Primary text-center m-2 px-4 py-2 border-none rounded font-estedad text-Caption-Md hover:bg-Main-Shade-2 focus:bg-Main-Shade-3 sm:px-4 sm:py-2 sm:hover:bg-Main-Shade-2 sm:focus:bg-Main-Shade-3;
+.btn-primary-text-sm {
+  @apply h-8 text-Neutral-White bg-Main-Primary text-center flex justify-center items-center m-2 p-2 border-none rounded font-estedad text-Caption-Sm hover:bg-Main-Shade-2 focus:bg-Main-Shade-3 sm:p-2 sm:hover:bg-Main-Shade-2 sm:focus:bg-Main-Shade-3;
+}
+
+.btn-primary-text-sm-added {
+  @apply h-8 text-Main-Primary  text-center flex justify-center items-center m-2 p-2 border border-Main-Primary rounded font-estedad text-Caption-Sm sm:p-2;
+}
+
+.btn-primary-text-lg {
+  @apply h-10 text-Neutral-White bg-Main-Primary text-center flex justify-center items-center m-2 px-4 py-2 border-none rounded font-estedad text-Button-Lg hover:bg-Main-Shade-2 focus:bg-Main-Shade-3 sm:px-4 sm:py-2 sm:hover:bg-Main-Shade-2 sm:focus:bg-Main-Shade-3;
+}
+
+.btn-primary-text-lg-added {
+  @apply h-10 text-Main-Primary  text-center flex justify-center items-center m-2 px-4 py-2 border border-Main-Primary rounded font-estedad text-Button-Lg  sm:px-4 sm:py-2;
 }
 
 /* sm Buttons */
