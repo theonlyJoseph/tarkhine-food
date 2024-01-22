@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        em: "1.5em",
+        em: "1em",
       },
       fontFamily: {
         estedad: ["Estedad"],
@@ -224,5 +224,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
 };
