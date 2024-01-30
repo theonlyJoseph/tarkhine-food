@@ -5,19 +5,20 @@
 @layer base {
   @font-face {
     font-family: "Estedad";
-    src: local("Estedad"),
+    src:
+      local("Estedad"),
       url("/Assets/Fonts/Estedad-Regular.woff2") format("woff");
   }
 }
 
 ::-ms-reveal {
   display: none;
-  background: ;
+  background:;
 }
 
 /* ///////////////////////////////////////////////////////////// */
 
 /* Search bar  */
 .search--active-sm {
-  @apply w-80 h-9 bg-Neutral-Gray-8 border-Neutral-Gray-7 flex justify-between items-center p-2 m-1 rounded-md;
+  @apply m-1 flex h-9 w-80 items-center justify-between rounded-md border-Neutral-Gray-7 bg-Neutral-Gray-8 p-2;
 }

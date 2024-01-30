@@ -7,11 +7,16 @@
     <title>Document</title>
   </head>
   <body>
-    <div
-      class="w-auto h-svh flex flex-col justify-between items-center flex-nowrap p-2"
+    <button
+      class="mx-5 my-5 rounded bg-Main-Primary p-1 text-center font-estedad text-Caption-Md"
     >
-      <div class="w-full flex justify-between items-center my-5">
-        <span id="arrow-right">
+      ثبت نام
+    </button>
+    <div
+      class="absolute flex h-[20rem] w-[24rem] flex-shrink-0 flex-col flex-nowrap items-center justify-evenly rounded border border-red-500 p-6"
+    >
+      <div class="flex w-full items-center justify-between">
+        <span id="arrow-right" class="invisible">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -25,6 +30,12 @@
             />
           </svg>
         </span>
+        <div class="flex-shrink-0">
+          <img
+            src="./Assets/Logo/Color=Green, Size=Small.svg"
+            alt="Tarkhineh logo"
+          />
+        </div>
         <span id="close-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,40 +56,29 @@
         </span>
       </div>
 
-      <div class="flex-shrink-0">
-        <img
-          class="mx-auto w-40 h-20"
-          src="./Assets/Logo/Color=Green, Size=Big.svg"
-          alt="Tarkhineh logo"
-        />
-      </div>
-      <div
-        id="login-input"
-        class="min-w-max h-auto flex justify-evenly items-center flex-col"
-      >
-        <p class="text-Neutral-Gray-8 font-estedad text-H6 text-center py-6">
+      <div id="login-input" class="items-cente flex h-full flex-col pt-3">
+        <p class="text-center font-estedad text-Body-Md text-Neutral-Gray-8">
           ورود/ثبت نام
         </p>
         <p
-          class="text-Neutral-Gray-7 font-estedad text-Body-Sm text-center py-6"
+          class="mb-3 text-center font-estedad text-Caption-Md text-Neutral-Gray-7"
         >
-          شماره همراه خود را وارد کنید.
+          با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.
         </p>
         <input
-          type="number"
+          type="phone"
+          maxlength="11"
           id="phone-number"
           placeholder="شماره همراه"
-          class="w-full h-9 border py-6 text-Neutral-Gray-7 border-Neutral-Gray-7 flex justify-between items-center p-2 m-1 rounded-md focus:outline-none placeholder:font-estedad placeholder:text-Body-Sm"
+          class="my-4 w-full rounded-md border border-Neutral-Gray-7 px-3 py-2 font-estedad text-Body-Sm text-Neutral-Gray-7 focus:outline-none"
         />
         <button
           type="submit"
-          class="w-full py-6 h-10 text-Neutral-White bg-Main-Primary text-center flex justify-center items-center gap-2 m-2 p-2 border-none rounded font-estedad text-Button-Lg hover:bg-Main-Shade-2 focus:bg-Main-Shade-3"
+          class="mb-2 flex h-10 w-full items-center justify-center rounded border-none bg-Main-Primary p-2 text-center font-estedad text-Button-Lg text-Neutral-White hover:bg-Main-Shade-2 focus:bg-Main-Shade-3"
         >
           ورورد
         </button>
-        <p
-          class="text-Neutral-Gray-7 font-estedad text-Caption-Sm text-center py-6"
-        >
+        <p class="text-center font-estedad text-Caption-Sm text-Neutral-Gray-7">
           ورود و عضویت در ترخینه به منزله قبول
           <span class="text-Main-Primary underline">قوانین و مقررات</span> است.
         </p>
