@@ -34,3 +34,9 @@
 //          </svg>`;
 //   }
 // });
+
+// Open login popup
+const modal = document.querySelector("dialog");
+const btn = document.querySelector("#btn").addEventListener("click", () => {
+  modal.showModal();
+});

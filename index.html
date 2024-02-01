@@ -8,82 +8,90 @@
   </head>
   <body>
     <button
-      class="mx-5 my-5 rounded bg-Main-Primary p-1 text-center font-estedad text-Caption-Md"
+      id="btn"
+      class="rounded border bg-red-400 p-3 font-estedad text-lg text-black"
     >
-      ثبت نام
+      ٍبت نام
     </button>
-    <div
-      class="absolute flex h-[20rem] w-[24rem] flex-shrink-0 flex-col flex-nowrap items-center justify-evenly rounded border border-red-500 p-6"
-    >
-      <div class="flex w-full items-center justify-between">
-        <span id="arrow-right" class="invisible">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M8.9101 20.67C8.7201 20.67 8.5301 20.6 8.3801 20.45C8.0901 20.16 8.0901 19.68 8.3801 19.39L14.9001 12.87C15.3801 12.39 15.3801 11.61 14.9001 11.13L8.3801 4.61002C8.0901 4.32002 8.0901 3.84002 8.3801 3.55002C8.6701 3.26002 9.1501 3.26002 9.4401 3.55002L15.9601 10.07C16.4701 10.58 16.7601 11.27 16.7601 12C16.7601 12.73 16.4801 13.42 15.9601 13.93L9.4401 20.45C9.2901 20.59 9.1001 20.67 8.9101 20.67Z"
-              fill="#353535"
-            />
-          </svg>
-        </span>
-        <div class="flex-shrink-0">
-          <img
-            src="./Assets/Logo/Color=Green, Size=Small.svg"
-            alt="Tarkhineh logo"
-          />
-        </div>
-        <span id="close-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M9.16999 15.58C8.97999 15.58 8.78999 15.51 8.63999 15.36C8.34999 15.07 8.34999 14.59 8.63999 14.3L14.3 8.63999C14.59 8.34999 15.07 8.34999 15.36 8.63999C15.65 8.92999 15.65 9.40998 15.36 9.69998L9.69998 15.36C9.55998 15.51 9.35999 15.58 9.16999 15.58Z"
-              fill="#353535"
-            />
-            <path
-              d="M14.83 15.58C14.64 15.58 14.45 15.51 14.3 15.36L8.63999 9.69998C8.34999 9.40998 8.34999 8.92999 8.63999 8.63999C8.92999 8.34999 9.40998 8.34999 9.69998 8.63999L15.36 14.3C15.65 14.59 15.65 15.07 15.36 15.36C15.21 15.51 15.02 15.58 14.83 15.58Z"
-              fill="#353535"
-            />
-          </svg>
-        </span>
-      </div>
 
-      <div id="login-input" class="items-cente flex h-full flex-col pt-3">
-        <p class="text-center font-estedad text-Body-Md text-Neutral-Gray-8">
-          ورود/ثبت نام
-        </p>
-        <p
-          class="mb-3 text-center font-estedad text-Caption-Md text-Neutral-Gray-7"
-        >
-          با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.
-        </p>
-        <input
-          type="phone"
-          maxlength="11"
-          id="phone-number"
-          placeholder="شماره همراه"
-          class="my-4 w-full rounded-md border border-Neutral-Gray-7 px-3 py-2 font-estedad text-Body-Sm text-Neutral-Gray-7 focus:outline-none"
-        />
-        <button
-          type="submit"
-          class="mb-2 flex h-10 w-full items-center justify-center rounded border-none bg-Main-Primary p-2 text-center font-estedad text-Button-Lg text-Neutral-White hover:bg-Main-Shade-2 focus:bg-Main-Shade-3"
-        >
-          ورورد
-        </button>
-        <p class="text-center font-estedad text-Caption-Sm text-Neutral-Gray-7">
-          ورود و عضویت در ترخینه به منزله قبول
-          <span class="text-Main-Primary underline">قوانین و مقررات</span> است.
-        </p>
+    <dialog class="rounded-lg border p-5 open:backdrop-sepia">
+      <div
+        class="flex w-96 flex-shrink-0 flex-col flex-nowrap items-center justify-center"
+      >
+        <div class="flex w-full items-center justify-between">
+          <span id="arrow-right" class="invisible">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M8.9101 20.67C8.7201 20.67 8.5301 20.6 8.3801 20.45C8.0901 20.16 8.0901 19.68 8.3801 19.39L14.9001 12.87C15.3801 12.39 15.3801 11.61 14.9001 11.13L8.3801 4.61002C8.0901 4.32002 8.0901 3.84002 8.3801 3.55002C8.6701 3.26002 9.1501 3.26002 9.4401 3.55002L15.9601 10.07C16.4701 10.58 16.7601 11.27 16.7601 12C16.7601 12.73 16.4801 13.42 15.9601 13.93L9.4401 20.45C9.2901 20.59 9.1001 20.67 8.9101 20.67Z"
+                fill="#353535"
+              />
+            </svg>
+          </span>
+          <div class="flex-shrink-0">
+            <img
+              src="./Assets/Logo/Color=Green, Size=Small.svg"
+              alt="Tarkhineh logo"
+            />
+          </div>
+          <span id="close-icon" class="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M9.16999 15.58C8.97999 15.58 8.78999 15.51 8.63999 15.36C8.34999 15.07 8.34999 14.59 8.63999 14.3L14.3 8.63999C14.59 8.34999 15.07 8.34999 15.36 8.63999C15.65 8.92999 15.65 9.40998 15.36 9.69998L9.69998 15.36C9.55998 15.51 9.35999 15.58 9.16999 15.58Z"
+                fill="#353535"
+              />
+              <path
+                d="M14.83 15.58C14.64 15.58 14.45 15.51 14.3 15.36L8.63999 9.69998C8.34999 9.40998 8.34999 8.92999 8.63999 8.63999C8.92999 8.34999 9.40998 8.34999 9.69998 8.63999L15.36 14.3C15.65 14.59 15.65 15.07 15.36 15.36C15.21 15.51 15.02 15.58 14.83 15.58Z"
+                fill="#353535"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div id="login-input" class="flex flex-col items-center pt-3">
+          <p class="text-Body-sm text-center font-estedad text-Neutral-Gray-8">
+            ورود/ثبت نام
+          </p>
+          <p
+            class="mb-3 text-center font-estedad text-Caption-Md text-Neutral-Gray-7"
+          >
+            با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.
+          </p>
+          <input
+            type="phone"
+            maxlength="11"
+            id="phone-number"
+            placeholder="شماره همراه"
+            class="my-4 w-full rounded-md border border-Neutral-Gray-7 px-3 py-2 font-estedad text-Body-Sm text-Neutral-Gray-7 focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="mb-2 flex h-10 w-full items-center justify-center rounded border-none bg-Main-Primary p-2 text-center font-estedad text-Button-Lg text-Neutral-White hover:bg-Main-Shade-2 focus:bg-Main-Shade-3"
+          >
+            ورورد
+          </button>
+          <p
+            class="text-center font-estedad text-Caption-Sm text-Neutral-Gray-7"
+          >
+            ورود و عضویت در ترخینه به منزله قبول
+            <span class="text-Main-Primary underline">قوانین و مقررات</span>
+            است.
+          </p>
+        </div>
       </div>
-    </div>
+    </dialog>
+
     <script src="/index.js"></script>
   </body>
 </html>
