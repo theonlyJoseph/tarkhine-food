@@ -6,157 +6,97 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <div
-      class="container flex h-screen flex-col items-center justify-between p-6"
-    >
-      <div class="flex w-full items-center justify-between">
-        <span id="arrow-right">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M8.9101 20.67C8.7201 20.67 8.5301 20.6 8.3801 20.45C8.0901 20.16 8.0901 19.68 8.3801 19.39L14.9001 12.87C15.3801 12.39 15.3801 11.61 14.9001 11.13L8.3801 4.61002C8.0901 4.32002 8.0901 3.84002 8.3801 3.55002C8.6701 3.26002 9.1501 3.26002 9.4401 3.55002L15.9601 10.07C16.4701 10.58 16.7601 11.27 16.7601 12C16.7601 12.73 16.4801 13.42 15.9601 13.93L9.4401 20.45C9.2901 20.59 9.1001 20.67 8.9101 20.67Z"
-              fill="#353535"
-            />
-          </svg>
-        </span>
-        <span id="arrow-left">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14.9993 20.67C14.8093 20.67 14.6193 20.6 14.4693 20.45L7.9493 13.93C6.8893 12.87 6.8893 11.13 7.9493 10.07L14.4693 3.55002C14.7593 3.26002 15.2393 3.26002 15.5293 3.55002C15.8193 3.84002 15.8193 4.32002 15.5293 4.61002L9.0093 11.13C8.5293 11.61 8.5293 12.39 9.0093 12.87L15.5293 19.39C15.8193 19.68 15.8193 20.16 15.5293 20.45C15.3793 20.59 15.1893 20.67 14.9993 20.67Z"
-              fill="#292D32"
-            />
-          </svg>
-        </span>
-      </div>
+  <body class="min-w-screen flex min-h-screen items-center justify-center">
+    <!-- Desktop -->
 
-      <div class="flex-shrink-0">
-        <img
-          class="mx-auto h-20 w-40"
-          src="./Assets/Logo/Color=Green, Size=Big.svg"
-          alt="Tarkhineh logo"
-        />
-      </div>
+    <div
+      id="modal"
+      class="h-screen w-screen rounded-lg sm:h-auto sm:max-w-sm sm:border"
+    >
       <div
-        id="login-input"
-        class="flex h-auto w-80 flex-col items-center justify-evenly"
+        class="m-1 flex h-screen flex-shrink-0 flex-col flex-nowrap items-center justify-between p-6 sm:h-auto"
       >
-        <p class="text-center font-estedad text-H6 text-Neutral-Gray-8">
-          کد تایید
-        </p>
-        <p
-          class="py-4 text-center font-estedad text-Body-Sm text-Neutral-Gray-7"
-        >
-          کد تایید پنج رقمی به شماره09 ارسال شد
-        </p>
-        <ul class="mb-1 flex w-full items-center justify-between">
-          <li>
-            <input
-              type="number"
-              maxlength="1"
-              class="h-8 w-12 rounded border border-Neutral-Gray-7 text-center font-estedad text-Body-Sm"
-            />
-          </li>
-          <li>
-            <input
-              type="number"
-              maxlength="1"
-              class="h-8 w-12 rounded border border-Neutral-Gray-7 text-center font-estedad text-Body-Sm"
-            />
-          </li>
-          <li>
-            <input
-              type="number"
-              maxlength="1"
-              class="h-8 w-12 rounded border border-Neutral-Gray-7 text-center font-estedad text-Body-Sm"
-            />
-          </li>
-          <li>
-            <input
-              type="number"
-              maxlength="1"
-              class="h-8 w-12 rounded border border-Neutral-Gray-7 text-center font-estedad text-Body-Sm"
-            />
-          </li>
-          <li>
-            <input
-              type="number"
-              maxlength="1"
-              class="h-8 w-12 rounded border border-Neutral-Gray-7 text-center font-estedad text-Body-Sm"
-            />
-          </li>
-        </ul>
-        <div class="flex w-full flex-row items-center justify-between py-1">
-          <span class="flex flex-row items-center justify-center">
+        <div class="flex w-full items-center justify-between">
+          <span id="arrow-right" class="invisible">
             <svg
-              width="15"
-              height="15"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z"
-                fill="#292D32"
-              />
-              <path
-                d="M15.7096 15.93C15.5796 15.93 15.4496 15.9 15.3296 15.82L12.2296 13.97C11.4596 13.51 10.8896 12.5 10.8896 11.61V7.51001C10.8896 7.10001 11.2296 6.76001 11.6396 6.76001C12.0496 6.76001 12.3896 7.10001 12.3896 7.51001V11.61C12.3896 11.97 12.6896 12.5 12.9996 12.68L16.0996 14.53C16.4596 14.74 16.5696 15.2 16.3596 15.56C16.2096 15.8 15.9596 15.93 15.7096 15.93Z"
-                fill="#292D32"
+                d="M8.9101 20.67C8.7201 20.67 8.5301 20.6 8.3801 20.45C8.0901 20.16 8.0901 19.68 8.3801 19.39L14.9001 12.87C15.3801 12.39 15.3801 11.61 14.9001 11.13L8.3801 4.61002C8.0901 4.32002 8.0901 3.84002 8.3801 3.55002C8.6701 3.26002 9.1501 3.26002 9.4401 3.55002L15.9601 10.07C16.4701 10.58 16.7601 11.27 16.7601 12C16.7601 12.73 16.4801 13.42 15.9601 13.93L9.4401 20.45C9.2901 20.59 9.1001 20.67 8.9101 20.67Z"
+                fill="#353535"
               />
             </svg>
-            <p class="pr-1 font-estedad text-Caption-Sm text-Neutral-Gray-7">
-              <span class="text-Caption-Sm text-Main-Primary">1:59</span> تا
-              دریافت مجدد کد
-            </p>
           </span>
-          <p class="font-estedad text-Caption-Sm text-Neutral-Gray-7">
-            ویرایش شماره
+          <div class="flex-shrink-0">
+            <img
+              src="./Assets/Logo/Color=Green, Size=Small.svg"
+              alt="Tarkhineh logo"
+            />
+          </div>
+          <span id="close-icon" class="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M9.16999 15.58C8.97999 15.58 8.78999 15.51 8.63999 15.36C8.34999 15.07 8.34999 14.59 8.63999 14.3L14.3 8.63999C14.59 8.34999 15.07 8.34999 15.36 8.63999C15.65 8.92999 15.65 9.40998 15.36 9.69998L9.69998 15.36C9.55998 15.51 9.35999 15.58 9.16999 15.58Z"
+                fill="#353535"
+              />
+              <path
+                d="M14.83 15.58C14.64 15.58 14.45 15.51 14.3 15.36L8.63999 9.69998C8.34999 9.40998 8.34999 8.92999 8.63999 8.63999C8.92999 8.34999 9.40998 8.34999 9.69998 8.63999L15.36 14.3C15.65 14.59 15.65 15.07 15.36 15.36C15.21 15.51 15.02 15.58 14.83 15.58Z"
+                fill="#353535"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div
+          id="login-input"
+          class="my-5 flex h-full w-full flex-col items-center justify-center"
+        >
+          <p
+            class="text-Body-sm mb-1 text-center font-estedad text-Neutral-Gray-8"
+          >
+            ورود/ثبت نام
+          </p>
+          <p
+            class="mb-3 text-center font-estedad text-Caption-Md text-Neutral-Gray-7"
+          >
+            با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.
+          </p>
+          <input
+            type="phone"
+            maxlength="11"
+            id="phone-number"
+            placeholder="شماره همراه"
+            class="mb-3 w-full rounded-md border border-Neutral-Gray-7 px-3 py-2 font-estedad text-Body-Sm text-Neutral-Gray-7 focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="mb-2 flex h-10 w-full items-center justify-center rounded border-none bg-Main-Primary p-2 text-center font-estedad text-Button-Lg text-Neutral-White hover:bg-Main-Shade-2 focus:bg-Main-Shade-3"
+          >
+            ورود
+          </button>
+          <p
+            class="text-center font-estedad text-Caption-Sm text-Neutral-Gray-7"
+          >
+            ورود و عضویت در ترخینه به منزله قبول
+            <span class="my-2 text-Main-Primary underline"
+              >قوانین و مقررات</span
+            >
+            است.
           </p>
         </div>
-        <button
-          type="submit"
-          id="submit-btn"
-          class="m-2 flex h-10 w-full items-center justify-center gap-2 rounded border-none bg-Main-Primary p-2 py-6 hover:bg-Main-Shade-2 focus:bg-Main-Shade-3"
-        >
-          <p class="text-center font-estedad text-Button-Lg text-Neutral-White">
-            تایید
-          </p>
-          <svg
-            id="spinner"
-            class="invisible h-em w-em animate-spin text-white"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <circle
-              class="opacity-25"
-              cx="12"
-              cy="12"
-              r="10"
-              stroke="currentColor"
-              stroke-width="4"
-            ></circle>
-            <path
-              class="opacity-75"
-              fill="currentColor"
-              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-            ></path>
-          </svg>
-        </button>
       </div>
     </div>
-
+    <!--  -->
     <script src="/index.js"></script>
   </body>
 </html>
