@@ -3,18 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- outer container -->
-    <div class="flex min-h-screen items-center justify-center bg-white">
+    <div class="flex min-h-screen items-center justify-center bg-white drop-shadow-lg">
       <div
-        class="flex h-full w-full flex-col items-center justify-evenly space-y-10 border border-transparent px-6 py-2 md:h-auto md:w-[500px] md:border-slate-400"
+        class="flex h-full w-full flex-col items-center justify-center space-y-4 rounded-md border border-transparent px-6 md:px-8 md:py-8 py-2 md:h-auto md:w-[425px] md:border-slate-400 "
+
       >
-        <div class="flex w-full flex-col items-center justify-center">
+        <div
+          class="flex w-full flex-col items-center justify-center md:flex-row "
+        >
           <svg
-            class="h-8 w-8 self-start"
+            class="h-8 w-8 self-start md:self-center"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -36,29 +46,66 @@
               ></path>
             </g>
           </svg>
-          <div class="mb-10 mt-40 md:my-2">
-            <img src="/Assets/Logo/Small.svg" alt="" class="" />
-          </div>
+          <div
+            class="mb-20 mt-40 text-center md:mx-auto md:my-0 md:mb-0 md:mt-0"
+          >
+          <picture>
+            <source media="(min-width:768px)" srcset="/Assets/Logo/greenSmall.svg">
+            <img src="/Assets/Logo/greenBig.svg" alt="logo">
+          </picture>          
+        </div>
         </div>
         <!-- <div class="my-20 md:my-2">
           <img src="/Assets/Logo/Small.svg" alt="" class="" />
         </div> -->
-        <div class="my-5 text-center font-estedad">
-          <h3 class="mb-5 text-H6">ورود / ثبت نام</h3>
+        <div class="my-6 md:my-0 text-center font-estedad">
+          <h3 class="mb-6 md:mb-2  text-H6">کد تائید</h3>
           <p class="text-Body-Sm text-Neutral-Gray-7">
-            .شماره همراه خود را وارد کنید
-          </p>
+            .
+کد تاُیید پنج رقمی به شماره 09130000000 ارسال شد</p>
         </div>
         <div class="w-full">
-          <input
-            class="w-full rounded-md border border-slate-500 py-2 font-estedad placeholder:pr-3 placeholder:text-right"
-            type="text"
-            placeholder="شماره همراه"
-            value=""
-          />
+          <ul class="mb-1 flex w-full items-center justify-between">
+            <li>
+              <input
+                type="text"
+                maxlength="1"
+                class="h-8 w-12 focus:border-Main-Primary inset-0 outline-none rounded border border-Neutral-Gray-7 text-center font-estedad text-Body-Sm"
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                maxlength="1"
+                class="h-8 w-12 focus:border-Main-Primary inset-0 outline-none rounded border border-Neutral-Gray-7 text-center font-estedad text-Body-Sm"
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                maxlength="1"
+                class="h-8 w-12 rounded border border-Neutral-Gray-7 text-center font-estedad text-Body-Sm"
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                maxlength="1"
+                class="h-8 w-12 focus:border-Main-Primary inset-0 outline-none rounded border border-Neutral-Gray-7 text-center font-estedad text-Body-Sm"
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                maxlength="1"
+                class="h-8 w-12 focus:border-Main-Primary inset-0 outline-none rounded border border-Neutral-Gray-7 text-center font-estedad text-Body-Sm"
+              />
+            </li>
+          </ul>
+          
           <button
             class="mt-5 w-full rounded-md bg-Main-Tint-7 py-2 font-estedad text-Neutral-White disabled:bg-Neutral-Gray-4"
-            type="submit"
+            type="submit" id="#submit-btn"
             disabled
           >
             ورود
@@ -72,6 +119,6 @@
         </div>
       </div>
     </div>
-    <script src="/login-1.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>

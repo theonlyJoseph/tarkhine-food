@@ -1,110 +1,92 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
-  <body
-    class="min-w-screen flex min-h-screen items-center justify-center bg-white"
-  >
-    <!-- Desktop -->
-
-    <div
-      class="flex h-auto w-80 flex-col items-center justify-between rounded-lg border bg-Neutral-White p-5 sm:h-80 sm:w-96"
-    >
+  <body>
+    <!-- outer container -->
+    <div class="flex min-h-screen items-center justify-center bg-white drop-shadow-lg">
       <div
-        class="my-4 flex w-full flex-row-reverse items-center justify-between"
+        class="flex h-full w-full flex-col items-center justify-center space-y-4 rounded-md border border-transparent px-6 md:px-8 md:py-8 py-2 md:h-auto md:w-[425px] md:border-slate-400 "
+        
       >
-        <span id="close-icon" class="cursor-pointer self-start">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="5.31348"
-              y="7.41406"
-              width="2"
-              height="16"
-              rx="1"
-              transform="rotate(-45 5.31348 7.41406)"
-              fill="#717171"
-            />
-            <rect
-              x="16.3135"
-              y="6"
-              width="2"
-              height="16"
-              rx="1"
-              transform="rotate(45 16.3135 6)"
-              fill="#717171"
-            />
-          </svg>
-        </span>
-        <picture class="mx-0">
-          <source media="(max-width: 480px)" srcset="/Assets/Logo/Logo.svg" />
-          <source media="(min-width: 481px)" srcset="/Assets/Logo/Big.svg" />
-          <img
-            class="object-cover"
-            src="/Assets/Logo/Small.svg"
-            alt="IfItDoesntMatchAnyMedia"
-          />
-        </picture>
-        <span id="right-arrow" class="invisible self-start text-Neutral-Gray-7">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M8.9101 20.67C8.7201 20.67 8.5301 20.6 8.3801 20.45C8.0901 20.16 8.0901 19.68 8.3801 19.39L14.9001 12.87C15.3801 12.39 15.3801 11.61 14.9001 11.13L8.3801 4.61002C8.0901 4.32002 8.0901 3.84002 8.3801 3.55002C8.6701 3.26002 9.1501 3.26002 9.4401 3.55002L15.9601 10.07C16.4701 10.58 16.7601 11.27 16.7601 12C16.7601 12.73 16.4801 13.42 15.9601 13.93L9.4401 20.45C9.2901 20.59 9.1001 20.67 8.9101 20.67Z"
-              fill="#353535"
-            />
-          </svg>
-        </span>
-      </div>
-      <div
-        id="description"
-        class="flex w-full flex-col items-center justify-between"
-      >
-        <p class="text-center font-estedad text-H6 text-Neutral-Gray-8">
-          ورود/ثبت نام
-        </p>
-        <p
-          class="my-3 text-center font-estedad text-Caption-Md text-Neutral-Gray-7"
+        <div
+          class="flex w-full flex-col items-center justify-center md:flex-row "
         >
-          با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.
-        </p>
-      </div>
-      <input
-        type="phone"
-        maxlength="11"
-        id="phone-input"
-        placeholder="شماره همراه"
-        class="w-full rounded-md border border-Neutral-Gray-7 px-4 py-2 font-estedad text-Body-Sm text-Neutral-Gray-7 focus:outline-none sm:px-5"
-      />
-      <button
-        id="submit-btn"
-        type="submit"
-        disabled
-        class="my-3 flex h-8 w-full items-center justify-center rounded border-none bg-Main-Primary p-2 text-center font-estedad text-Button-Lg text-white hover:bg-Main-Shade-2 focus:bg-Main-Shade-3 disabled:bg-Neutral-Gray-3 disabled:text-Neutral-Gray-4 sm:h-10"
-      >
-        ورود
-      </button>
-      <div id="agreement" class="">
-        <p class="text-center font-estedad text-Caption-Sm text-Neutral-Gray-7">
-          ورود و عضویت در ترخینه به منزله قبول
-          <span class="text-Main-Primary underline">قوانین و مقررات</span>
-          است.
-        </p>
+          <svg
+            class="h-8 w-8 self-start md:self-center"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#000000"
+            stroke-width="0.00024000000000000003"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke="#CCCCCC"
+              stroke-width="0.144"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z"
+                fill="#0F0F0F"
+              ></path>
+            </g>
+          </svg>
+          <div
+            class="mb-20 mt-40 text-center md:mx-auto md:my-0 md:mb-0 md:mt-0"
+          >
+          <picture>
+            <source media="(min-width:768px)" srcset="/Assets/Logo/greenSmall.svg">
+            <img src="/Assets/Logo/greenBig.svg" alt="logo">
+          </picture>          
+        </div>
+        </div>
+        <!-- <div class="my-20 md:my-2">
+          <img src="/Assets/Logo/Small.svg" alt="" class="" />
+        </div> -->
+        <div class="my-6 md:my-0 text-center font-estedad">
+          <h3 class="mb-6 md:mb-2  text-H6">ورود / ثبت نام</h3>
+          <p class="text-Body-Sm text-Neutral-Gray-7">
+            .شماره همراه خود را وارد کنید
+          </p>
+        </div>
+        <div class="w-full">
+          <input
+            class="w-full rounded-md border border-slate-500 py-2 font-estedad placeholder:pr-3 placeholder:text-right"
+            type="text" id="#phone-input"
+            placeholder="شماره همراه"
+            value=""
+          />
+          <button
+            class="mt-5 w-full rounded-md bg-Main-Tint-7 py-2 font-estedad text-Neutral-White disabled:bg-Neutral-Gray-4"
+            type="submit" id="#submit-btn"
+            disabled
+          >
+            ورود
+          </button>
+          <p
+            class="mt-5 text-center font-estedad text-Caption-Sm text-Neutral-Gray-8"
+          >
+            .ورود و عضویت در ترخینه به منزله قبول
+            <a class="text-Main-Primary underline">قوانین و مقررات</a> است
+          </p>
+        </div>
       </div>
     </div>
-    <script src="/login-1.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
